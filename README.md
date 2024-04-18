@@ -14,7 +14,7 @@ Posit cloud at the following link: [https://posit.cloud/content/7969424](https:/
 [https://www.mrcctu.ucl.ac.uk/books/handbook-of-meta-analysis/](https://www.mrcctu.ucl.ac.uk/books/handbook-of-meta-analysis/).  
 
 
-**Systematic Reviews in Health Research: Meta‐Analysis in Context. 2022**
+**Systematic Reviews in Health Research: Meta‐Analysis in Context. 2022**  
 [https://www.systematic-reviews3.org/](https://www.systematic-reviews3.org/)
 
 
@@ -30,5 +30,5 @@ Orsini, N., and Spiegelman D. Meta-Analysis of Dose-Response Relationships. Chap
 Mixed models for dose-response meta-analysis in Stata  
 [http://stats4life.se/software/drmeta/](http://stats4life.se/software/drmeta/)
 
-Shiny app for dose-response meta-analysis using R.
+Shiny app for dose-response meta-analysis using R.  
 [http://alessiocrippa.com/shiny/dosresmeta/](http://alessiocrippa.com/shiny/dosresmeta/)
