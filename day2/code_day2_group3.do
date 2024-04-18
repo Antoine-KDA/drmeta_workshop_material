@@ -5,20 +5,31 @@
 clear all
 use http://www.stats4life.se/data/drm/ad_group_3.dta
 
-
 * Common effect multivariate dose-response model using a quadratic function 
 
 * Quick way using drmeta and its post-estimation command drmeta_graph 
 gen dose2 = dose^2 
 drmeta e_b dose dose2, data(PT cases) id(id)  type(type) se(e_se)  fixed
 
-drmeta_graph , dose(0(1)7) ref(3) equation(d d^2) gls  eform ///
+drmeta_graph , dose(0(.5)7) ref(3) equation(d d^2) gls  eform ///
 		legend(off)   ysize(4) xsize(4) ///
 		xlabel(#10) ///
 		ylabel(#10) ///
 		ytitle("Mean Difference") ///
 		xtitle("Alcohol Consumption, drinks/week") name(f_dr_ipd_q_ce, replace)  ///
 		title("Common effect DRM " "Quadratic function") yscale(log)
+
+mkspline doses = dose , nk(3) cubic displayknots 
+mat knots = r(knots)
+drmeta e_b doses1 doses2, data(PT cases) id(id)  type(type) se(e_se) reml
+
+drmeta_graph , dose(0(.5)7) ref(3) matknots(knots)  noci eform ///
+		legend(off)   ysize(4) xsize(4) ///
+		xlabel(#10) ///
+		ylabel(#10) ///
+		ytitle("Hazard Ratio") ///
+	    xtitle("Alcohol Consumption, drinks/week")    ///
+		title("Random-effects DRM" "Restricted Cubic Spline")  yscale(log) blup
 		
 * Longer way of doing the two-stage approach
 mvmeta_make ,  saving(_mvmeta_est_ad) replace by(id)  names(b V) : drmeta e_b dose dose2, data(PT case) id(id)  type(type) se(e_se)  
