@@ -22,7 +22,7 @@ Posit cloud at the following link: [https://posit.cloud/content/7969424](https:/
 
 Orsini, N., Larsson, S. C., & Salanti, G. (2022). *Dose–Response Meta‐Analysis*. Systematic Reviews in Health Research: Meta‐Analysis
 in Context, 258-269. John Wiley & Sons Ltd.  
-[http://stats4life.se/book/chapter14](http://stats4life.se/book/chapter14/
+[http://stats4life.se/book/chapter14](http://stats4life.se/book/chapter14/)
 
 Orsini, N., and Spiegelman D. Meta-Analysis of Dose-Response Relationships. Chapter 18. in Handbook of Meta-Analysis. Chapman and Hall/CRC, 2020. 395-428.  
 [http://stats4life.se/book/chapter18](http://stats4life.se/book/chapter18/)
