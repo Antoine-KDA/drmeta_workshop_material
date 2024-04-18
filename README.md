@@ -1,4 +1,4 @@
-![image](https://github.com/alecri/drmeta_workshop_material/assets/5814311/8d13b27d-b355-43c4-a390-86944477cb99)![image](https://github.com/alecri/drmeta_workshop_material/assets/5814311/806f414a-f06f-4cc9-ad8a-26cf20a6a904)![image](https://github.com/alecri/drmeta_workshop_material/assets/5814311/9741778a-b612-4669-a6f0-f38681f746ce)# Material for the workshop on dose-response meta-analysis
+# Material for the workshop on dose-response meta-analysis
 
 Created by Alessio Crippa
 
